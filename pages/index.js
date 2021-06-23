@@ -16,7 +16,7 @@ export default function Home() {
         <title>Fred e Roberta</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Casamento Fred e Roberta" />
-        <meta property="og:image" content="/fer.png" />
+        <meta property="og:image" content="https://fer.vercel.app/fer.png" />
       </Head>
 
       <main className={styles.main}>
