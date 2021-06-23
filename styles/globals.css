@@ -1,16 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Alex Brush", cursive, Roboto, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
 
-* {
-  box-sizing: border-box;
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.FlipClock {
+  justify-content: center !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 5%;
+}
+
+.FlipClock .flipUnitContainer {
+  width: 100px !important;
+  height: 55px !important;
+}
+
+.FlipClock .flipUnitContainer .flipCard {
+  width: 100px !important;
+  height: 28px !important;
+}
+
+.FlipClock .flipUnitContainer .ContainerTitle {
+  font-family: Roboto !important;
+  top: 70px !important;
+  font-size: 1rem !important;
+}
+
+.FlipClock .divider {
+  margin: auto 10px !important;
+}
+
+.FlipClock .flipUnitContainer .lowerCard,
+.FlipClock .flipUnitContainer .upperCard {
+  background-color: #333;
+}
+
+@media only screen and (max-device-width: 640px) {
+  .FlipClock .flipUnitContainer {
+    width: 50px !important;
+    height: 44px !important;
+  }
+
+  .FlipClock .flipUnitContainer .flipCard {
+    width: 50px !important;
+    height: 22px !important;
+  }
+
+  .FlipClock .flipUnitContainer .ContainerTitle {
+    font-family: Roboto !important;
+    top: 55px !important;
+    font-size: 0.7rem !important;
+  }
 }

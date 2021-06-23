@@ -1,65 +1,75 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import dynamic from "next/dynamic";
+import styles from "../styles/Home.module.css";
+
+const FlipClock = dynamic(
+  () => {
+    return import("x-react-flipclock");
+  },
+  { ssr: false }
+);
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Fred e Roberta</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <section className={styles.header}>
+          <img src="/fer-font.png" alt="fer font" />
+        </section>
+        <section className={styles["photo-fer"]}>
+          <img src="/fer.jpeg" alt="fer" />
+        </section>
+        <section className={styles.countdown}>
+          <h1 className={styles.title}>Sejam bem-vindos ao nosso site!</h1>
+          <h2 className={styles.subtitle}>
+            A melhor forma de compartilhar esse momento com vocês é vivendo
+            juntos esse sonho!
+          </h2>
+          <hr className={styles.divider} />
+          <p className={styles["countdown-text"]}>
+            Contagem regressiva para o grande dia:
+          </p>
+          <div className={styles["countdown-clock"]}>
+            <FlipClock
+              type="countdown"
+              count_to="2021-09-08 00:00:00"
+              units={[
+                {
+                  sep: "",
+                  type: "days",
+                  title: "dias",
+                },
+                {
+                  sep: "",
+                  type: "hours",
+                  title: "horas",
+                },
+                {
+                  sep: "",
+                  type: "minutes",
+                  title: "minutos",
+                },
+                {
+                  sep: "",
+                  type: "seconds",
+                  title: "segundos",
+                },
+              ]}
+            />
+          </div>
+        </section>
+        <section className={styles["photo-fer-full"]}>
+          <img src="/fer-full.png" alt="fer full" />
+        </section>
+        <section className={styles.gifts}>
+          <h1>Vai nos ajudar com o que?</h1>
+        </section>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
-  )
+  );
 }

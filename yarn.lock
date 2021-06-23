@@ -389,6 +389,11 @@ classnames@2.2.6:
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
 
+classnames@^2.2.5:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
+
 color-convert@^1.9.0:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
@@ -417,6 +422,16 @@ colorette@^1.2.1:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.2.2.tgz#cbcc79d5e99caea2dbf10eb3a26fd8b3e6acfa94"
   integrity sha512-MKGMzyfeuutC/ZJ1cba9NqcNpfeqMUcYmyF1ZFY6/Cn7CNSAKx6a+s48sqLqyAiZuaP2TcqMhoo+dlwFnVxT9w==
+
+colorx@*:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/colorx/-/colorx-0.0.7.tgz#2497fe00e247bb80559b8b80433ae6cd280db672"
+  integrity sha1-JJf+AOJHu4BVm4uAQzrmzSgNtnI=
+
+commander@*:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
+  integrity sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==
 
 commondir@^1.0.1:
   version "1.0.1"
@@ -687,6 +702,13 @@ find-up@^4.0.0:
   dependencies:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
+
+flipclock@^0.10.0:
+  version "0.10.8"
+  resolved "https://registry.yarnpkg.com/flipclock/-/flipclock-0.10.8.tgz#4b25b33896921ffb8cf361b23104e705cf348282"
+  integrity sha512-IN91R+0LZvQG/uJVKOKHP9/L+ak2C4cD2A1bp21185+p6A+XGA75NrWTc66fE3y7hyieHQrqV3lIWdND3pAUaQ==
+  dependencies:
+    jsdocs "^1.0.0"
 
 foreach@^2.0.5:
   version "2.0.5"
@@ -972,10 +994,27 @@ jest-worker@27.0.0-next.5:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
+jquery@^3.3.1:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
+  integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
+
+jsdocs@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/jsdocs/-/jsdocs-1.0.0.tgz#c515696e05ed1ecbbc03d1c3268a1df20b8ce832"
+  integrity sha512-6GmPLgjwy1aDNohUauo/ALWuGGYZ7snhLpVj5n55nJMdULnWjlwJ0Zk0hmq0P94cU7P8mEDBGiMav9GEehXPrQ==
+  dependencies:
+    colorx "*"
+    commander "*"
+    marked "*"
+    minitpl "0.0.3"
+    mkdirp "0.5.0"
+    xutil "0.0.9"
 
 json5@^1.0.1:
   version "1.0.1"
@@ -1032,6 +1071,11 @@ make-dir@^3.0.2:
   dependencies:
     semver "^6.0.0"
 
+marked@*:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-2.1.2.tgz#59579e17b02443312caa1509994d5a0b18ae38e1"
+  integrity sha512-ueJhIvklJJw04qxQbGIAu63EXwwOCYc7yKMBjgagTM4rjC5QtWyqSNgW7jCosV1/Km/1TUfs5qEpAqcGG0Mo5g==
+
 md5.js@^1.3.4:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/md5.js/-/md5.js-1.3.5.tgz#b5d07b8e3216e3e27cd728d72f70d1e6a342005f"
@@ -1064,10 +1108,27 @@ minimalistic-crypto-utils@^1.0.1:
   resolved "https://registry.yarnpkg.com/minimalistic-crypto-utils/-/minimalistic-crypto-utils-1.0.1.tgz#f6c00c1c0b082246e5c4d99dfb8c7c083b2b582a"
   integrity sha1-9sAMHAsIIkblxNmd+4x8CDsrWCo=
 
+minimist@0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
+  integrity sha1-hX/Kv8M5fSYluCKCYuhqp6ARsF0=
+
 minimist@^1.2.0:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+
+minitpl@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/minitpl/-/minitpl-0.0.3.tgz#7c603c1a24747a144c83c9a8d15c3fee563f6bf1"
+  integrity sha1-fGA8GiR0ehRMg8mo0Vw/7lY/a/E=
+
+mkdirp@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.0.tgz#1d73076a6df986cd9344e15e71fcc05a4c9abf12"
+  integrity sha1-HXMHam35hs2TROFecfzAWkyavxI=
+  dependencies:
+    minimist "0.0.8"
 
 ms@2.0.0:
   version "2.0.0"
@@ -1352,7 +1413,7 @@ process@0.11.10, process@^0.11.10:
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
 
-prop-types@15.7.2:
+prop-types@15.7.2, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -1428,6 +1489,13 @@ raw-body@2.4.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
+react-countdown@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/react-countdown/-/react-countdown-2.3.2.tgz#4cc27f28f2dcd47237ee66e4b9f6d2a21fc0b0ad"
+  integrity sha512-Q4SADotHtgOxNWhDdvgupmKVL0pMB9DvoFcxv5AzjsxVhzOVxnttMbAywgqeOdruwEAmnPhOhNv/awAgkwru2w==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-dom@17.x:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
@@ -1436,6 +1504,40 @@ react-dom@17.x:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     scheduler "^0.20.2"
+
+react-dom@^16.2.0:
+  version "16.14.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.14.0.tgz#7ad838ec29a777fb3c75c3a190f661cf92ab8b89"
+  integrity sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.19.1"
+
+react-flip-clock-count-down@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-flip-clock-count-down/-/react-flip-clock-count-down-1.0.1.tgz#dfd17f80a76c4ad0f398c8e27d0918e7ddc75a1e"
+  integrity sha512-JpOe8HLhtTV9hNAGsPFpDTNhfXt2rYcvqpxQ3uWzwa7Vo4nkvm8Bz9IdEzGG89pEGmPplR4g03VE1/nLsCd7Qw==
+  dependencies:
+    react "^16.2.0"
+    react-dom "^16.2.0"
+
+react-flip-clock@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-flip-clock/-/react-flip-clock-1.0.4.tgz#eee08dd7498458cc826b6cb6c949acac26b80de7"
+  integrity sha512-UfUHZt7i4luDGcgRFLL7mByDCzHtVP3HDoeLMySm9QxeiTAF394bQ+2JNF8k8YgssYi6NOCYz+4B6lCe8aA8Qw==
+  dependencies:
+    react "^16.2.0"
+    react-dom "^16.2.0"
+
+react-flip-counter@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/react-flip-counter/-/react-flip-counter-0.4.0.tgz#a6ec03b28a549a2d348cc042d77b309d2fb2019c"
+  integrity sha512-Yt6zE8s3cR3uTgX4usx23bYJ0Xhtc9Oxbe6JSScLDt0inhOuQmmJUNUjONForZxUSRU/InyxR8+g3v2kbYOkPw==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.6.0"
 
 react-is@16.13.1, react-is@^16.8.1:
   version "16.13.1"
@@ -1454,6 +1556,23 @@ react@17.x:
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
+
+react@^16.2.0:
+  version "16.14.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
+  integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+
+reactflipclock-js@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/reactflipclock-js/-/reactflipclock-js-1.0.2.tgz#6d77b3a95498a0a877b4892ad41db1dceed0a2d2"
+  integrity sha512-o6XvQ76mY6vpPUR56uxTpFGVoWcPKlO/jG9zsy07oEQeCZm5egOgfHixoc+yVhvS2X3+v5qVZTlPsuwDNwTfzA==
+  dependencies:
+    flipclock "^0.10.0"
+    jquery "^3.3.1"
 
 readable-stream@^2.0.2, readable-stream@^2.3.3, readable-stream@^2.3.6:
   version "2.3.7"
@@ -1511,6 +1630,14 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
+
+scheduler@^0.19.1:
+  version "0.19.1"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.19.1.tgz#4f3e2ed2c1a7d65681f4c854fa8c5a1ccb40f196"
+  integrity sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 scheduler@^0.20.2:
   version "0.20.2"
@@ -1883,10 +2010,23 @@ which-typed-array@^1.1.2:
     has-symbols "^1.0.1"
     is-typed-array "^1.1.3"
 
+x-react-flipclock@^0.1.184153:
+  version "0.1.184153"
+  resolved "https://registry.yarnpkg.com/x-react-flipclock/-/x-react-flipclock-0.1.184153.tgz#7a8167b71d6046db31b6709d89e0ffd0b9e07851"
+  integrity sha512-sOICBz6ezokr1kzGaXlNnw3S2932DHAldso2dKrPYqcsmzEkz5KzxLTM64Z7irJWKIDtGo3kRZD0a9sO0xcKGA==
+  dependencies:
+    react "^16.2.0"
+    react-dom "^16.2.0"
+
 xtend@^4.0.0, xtend@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
+
+xutil@0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/xutil/-/xutil-0.0.9.tgz#efcfe5e8dc4478ad6d463c23f0c4c081240973ec"
+  integrity sha1-78/l6NxEeK1tRjwj8MTAgSQJc+w=
 
 yocto-queue@^0.1.0:
   version "0.1.0"
