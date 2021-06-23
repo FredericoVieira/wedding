@@ -15,6 +15,11 @@ export default function Home() {
       <Head>
         <title>Fred e Roberta</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Casamento Fred e Roberta" />
+        <meta property="og:image" content="/fer.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1024" />
+        <meta property="og:image:height" content="1024" />
       </Head>
 
       <main className={styles.main}>
@@ -22,7 +27,7 @@ export default function Home() {
           <img src="/fer-font.png" alt="fer font" />
         </section>
         <section className={styles["photo-fer"]}>
-          <img src="/fer.jpeg" alt="fer" />
+          <img src="/fer.png" alt="fer" />
         </section>
         <section className={styles.countdown}>
           <h1 className={styles.title}>Sejam bem-vindos ao nosso site!</h1>
