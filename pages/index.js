@@ -18,8 +18,8 @@ export default function Home() {
         <meta name="description" content="Casamento Fred e Roberta" />
         <meta property="og:image" content="/fer.png" />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1024" />
-        <meta property="og:image:height" content="1024" />
+        <meta property="og:image:width" content="250" />
+        <meta property="og:image:height" content="250" />
       </Head>
 
       <main className={styles.main}>
