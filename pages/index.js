@@ -69,7 +69,37 @@ export default function Home() {
           <img src="/fer-full.png" alt="fer full" />
         </section>
         <section className={styles.gifts}>
-          <h1>Vai nos ajudar com o que?</h1>
+          <h1 className={styles.title}>Lista de Casamento Virtual</h1>
+          <h2 className={styles.subtitle}>
+            Queridos familiares e amigos, para nós, a presença de vocês neste
+            dia tão especial é o maior presente que poderíamos receber. Mas, se
+            vocês também quiserem nos presentear, ficaremos muito agradecidos.
+            Com amor, Fred e Roberta.
+          </h2>
+          <div className={styles.container}>
+            <div className={styles.card}>
+              <div className={styles["card-header"]}>
+                <img src="/honey.png" alt="lua de mel" />
+              </div>
+              <div className={styles["card-body"]}>
+                <h4 className={styles.title}>Lua de mel</h4>
+                <p className={styles.description}>
+                  Praias paradisíacas do México!
+                </p>
+                <p className={styles.price}>R$1000</p>
+                <p className={styles.chunk}>01/10</p>
+                <div className={styles["button-wrapper"]}>
+                  <a
+                    className={`${styles.button} ${styles.honey}`}
+                    href="https://www.izzigaming.com.br"
+                    target="_blank"
+                  >
+                    Comprar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>

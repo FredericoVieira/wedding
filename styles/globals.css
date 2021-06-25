@@ -26,6 +26,10 @@ body::-webkit-scrollbar {
   height: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .FlipClock {
   justify-content: center !important;
   width: auto !important;

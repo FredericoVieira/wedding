@@ -37,6 +37,15 @@
   padding: 10%;
 }
 
+.countdown .title {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.countdown .subtitle {
+  font-size: 2rem;
+}
+
 .countdown-text {
   letter-spacing: 0.3rem;
   text-transform: uppercase;
@@ -48,13 +57,115 @@
   margin-bottom: 5%;
 }
 
-.title {
+.gifts {
+  text-align: center;
+  padding: 10%;
+}
+
+.gifts .title {
   font-size: 3.5rem;
   font-weight: 600;
 }
 
-.subtitle {
+.gifts .subtitle {
   font-size: 2rem;
+  margin-bottom: 10%;
+}
+
+.container {
+  display: flex;
+  /* width: 1040px; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 350px;
+  margin-bottom: 10%;
+}
+
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px 20px 40px 20px;
+}
+
+.card-body .title {
+  text-align: center;
+  letter-spacing: 0.3rem;
+  font-size: 2.5rem;
+}
+
+.card-body .description {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 0.8rem;
+  font-family: Roboto;
+  margin-bottom: 10%;
+}
+
+.card-body .price {
+  text-align: center;
+  letter-spacing: 0.3rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.card-body .chunk {
+  text-align: center;
+  letter-spacing: 0.3rem;
+  font-size: 1.3rem;
+  margin-bottom: 10%;
+}
+
+.button-wrapper {
+  margin-top: 12%;
+}
+
+.button {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-weight: 500;
+  z-index: 0;
+}
+
+.button::after {
+  content: "";
+  background-color: red;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button.honey::after {
+  background-color: #ecc690;
+}
+
+.button.honey:hover::after {
+  top: 0px;
+  left: 0px;
 }
 
 @media only screen and (max-device-width: 640px) {
@@ -73,6 +184,15 @@
     padding: 5%;
   }
 
+  .countdown .title {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .countdown .subtitle {
+    font-size: 1.5rem;
+  }
+
   .countdown-text {
     margin-top: 10%;
     letter-spacing: 0.3rem;
@@ -85,12 +205,18 @@
     margin-bottom: 10%;
   }
 
-  .title {
+  .gifts {
+    text-align: center;
+    padding: 5%;
+  }
+
+  .gifts .title {
     font-size: 2.5rem;
     font-weight: 600;
   }
 
-  .subtitle {
+  .gifts .subtitle {
     font-size: 1.5rem;
+    margin-bottom: 5%;
   }
 }
