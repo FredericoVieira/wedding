@@ -7,22 +7,22 @@
   height: 100%;
 }
 
-.photo-fer {
+.photo-ref {
   height: 100vh;
   padding: 0 10%;
 }
 
-.photo-fer img {
+.photo-ref img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.photo-fer-full {
+.photo-ref-full {
   height: 100vh;
 }
 
-.photo-fer-full img {
+.photo-ref-full img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -107,7 +107,7 @@
 
 .card-body .description {
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
   font-size: 0.8rem;
   font-family: Roboto;
   margin-bottom: 10%;
@@ -163,7 +163,27 @@
   background-color: #ecc690;
 }
 
-.button.honey:hover::after {
+.button.spa::after {
+  background-color: #a6f3e5;
+}
+
+.button.boat::after {
+  background-color: #ffb545;
+}
+
+.button.dolphin::after {
+  background-color: #cccccc;
+}
+
+.button.fridge::after {
+  background-color: #ff6363;
+}
+
+.button.tv::after {
+  background-color: #bdff66;
+}
+
+.button:hover::after {
   top: 0px;
   left: 0px;
 }
@@ -174,7 +194,7 @@
     padding: 1% 5%;
   }
 
-  .photo-fer {
+  .photo-ref {
     height: 50vh;
     padding: 0 5%;
   }
