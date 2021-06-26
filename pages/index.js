@@ -17,7 +17,7 @@ const gifts = [
     classname: "plane",
     price: "R$2500",
     chunk: "01/02",
-    href: "https://www.izzigaming.com.br",
+    href: "https://pag.ae/7XgHQFim5",
   },
   {
     src: "/honey.png",
@@ -26,7 +26,7 @@ const gifts = [
     classname: "honey",
     price: "R$1000",
     chunk: "01/10",
-    href: "https://www.izzigaming.com.br",
+    href: "https://pag.ae/7XgHRyuEo",
   },
   {
     src: "/spa.png",
@@ -35,7 +35,7 @@ const gifts = [
     classname: "spa",
     price: "R$500",
     chunk: "01/01",
-    href: "https://www.izzigaming.com.br",
+    href: "https://pag.ae/7XgHRYsVn",
   },
   {
     src: "/boat.png",
