@@ -39,7 +39,7 @@ const gifts = [
   },
   {
     src: "/boat.png",
-    title: "Passeio de Barco",
+    title: "Velejando",
     description: "Vamos navegar marujos!",
     classname: "boat",
     price: "R$250",
@@ -48,7 +48,7 @@ const gifts = [
   },
   {
     src: "/dolphin.png",
-    title: "Nadando com os Golfinhos",
+    title: "Golfinhos",
     description: "Conhecendo Flipper e seus amigos!",
     classname: "dolphin",
     price: "R$150",
@@ -75,7 +75,7 @@ const gifts = [
   },
   {
     src: "/turbo.png",
-    title: "Kit Turbo AP",
+    title: "Kit Turbo",
     description: "Apzão três kili e meiiiiiii!",
     classname: "turbo",
     price: "R$200",
@@ -160,7 +160,7 @@ export default function Home() {
           <div className={styles.container}>
             {gifts.map(
               ({ src, title, description, price, chunk, classname, href }) => (
-                <div className={styles.card}>
+                <div key={title} className={styles.card}>
                   <div className={styles["card-header"]}>
                     <img src={src} alt={title} />
                   </div>
