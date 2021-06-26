@@ -11,6 +11,15 @@ const FlipClock = dynamic(
 
 const gifts = [
   {
+    src: "/plane.png",
+    title: "Passagens",
+    description: "Não vamos viajar de carro!",
+    classname: "plane",
+    price: "R$2500",
+    chunk: "01/02",
+    href: "https://www.izzigaming.com.br",
+  },
+  {
     src: "/honey.png",
     title: "Lua de Mel",
     description: "Praias paradisíacas do México!",
@@ -64,6 +73,15 @@ const gifts = [
     chunk: "01/10",
     href: "https://www.izzigaming.com.br",
   },
+  {
+    src: "/turbo.png",
+    title: "Kit Turbo AP",
+    description: "Apzão três kili e meiiiiiii!",
+    classname: "turbo",
+    price: "R$200",
+    chunk: "01/15",
+    href: "https://www.izzigaming.com.br",
+  },
 ];
 
 export default function Home() {
@@ -86,8 +104,10 @@ export default function Home() {
         <section className={styles.countdown}>
           <h1 className={styles.title}>Sejam bem-vindos ao nosso site!</h1>
           <h2 className={styles.subtitle}>
-            A melhor forma de compartilhar esse momento com vocês é vivendo
-            juntos esse sonho!
+            A pandemia nos tirou a oportunidade de dividir com cada um de vocês
+            esse momento da maneira que gostaríamos: Com uma super festa. Por
+            isso, fizemos esse site, para compartilhar esse passo tão importante
+            em nossas vidas.
           </h2>
           <hr className={styles.divider} />
           <p className={styles["countdown-text"]}>
@@ -128,10 +148,14 @@ export default function Home() {
         <section className={styles.gifts}>
           <h1 className={styles.title}>Lista de Casamento Virtual</h1>
           <h2 className={styles.subtitle}>
-            Queridos familiares e amigos, para nós, a presença de vocês neste
-            dia tão especial é o maior presente que poderíamos receber. Mas, se
-            vocês também quiserem nos presentear, ficaremos muito agradecidos.
-            Com amor, Roberta e Frederico.
+            Optamos por fazer apenas o casamento civil, nesse momento. Assim que
+            pudermos, vamos nos reunir para celebrar essa nova etapa de nossas
+            vidas. A contagem regressiva começa, o frio na barriga e toda a
+            ansiedade do dia mais esperado de nossas vidas nos enche de alegria.
+            Vamos juntos nesse grande sonho, o dia em que uniremos nossas almas
+            e corpos para sempre, o dia do nosso casamento. Mas, se vocês também
+            quiserem nos presentear, ficaremos muito agradecidos. Com amor,
+            Roberta e Frederico.
           </h2>
           <div className={styles.container}>
             {gifts.map(
@@ -144,7 +168,7 @@ export default function Home() {
                     <h4 className={styles.title}>{title}</h4>
                     <p className={styles.description}>{description}</p>
                     <p className={styles.price}>{price}</p>
-                    <p className={styles.chunk}>{chunk}</p>
+                    <p className={styles.chunk}>Cota {chunk}</p>
                     <div className={styles["button-wrapper"]}>
                       <a
                         className={`${styles.button} ${styles[classname]}`}

@@ -159,6 +159,10 @@
   transition: 0.2s;
 }
 
+.button.plane::after {
+  background-color: #e8687c;
+}
+
 .button.honey::after {
   background-color: #ecc690;
 }
@@ -181,6 +185,10 @@
 
 .button.tv::after {
   background-color: #bdff66;
+}
+
+.button.turbo::after {
+  background-color: #6586ff;
 }
 
 .button:hover::after {
